@@ -26,17 +26,27 @@ async function choose(x) {
     console.log(arr);
     let index = 0;
 
-    function delaynext() {
+    function changeImageWithAnimation() {
         if (index < arr.length) {
             console.log(arr[index]);
-            document.getElementById("dogimage").src = arr[index];
+            let dogImage = document.getElementById("dogimage");
+            dogImage.src = arr[index];
+            dogImage.classList.add("animate__animated", "animate__fadeIn");
+
+            // Remove animation class after animation completes
+            setTimeout(() => {
+                dogImage.classList.remove("animate__fadeIn");
+            }, 1000); // Animation duration (1 second)
+
             index++;
-            setInterval(delaynext, 5000);
+            setTimeout(changeImageWithAnimation, 5000); // Delay of 5000ms (5 seconds)
         }
     }
 
-    delaynext();
+    changeImageWithAnimation();
 }
+
+
 document.getElementById("drop").addEventListener("change", function () {
     console.log(this.value);
     choose(this.value);
