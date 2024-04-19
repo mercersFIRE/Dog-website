@@ -1,4 +1,36 @@
-#dogimage
+body {
+    margin: 0;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+#dogimage {
+    margin: 0 auto;
+}
+
+.section1 {
+    padding: 4rem 4rem;
+    background-color: #b2dfdb;
+    text-align: center;
+}
+
+.insection1 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.insection1 h1 {    
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.dropdown {
+    margin:20px auto;
+    text-align: center;
+}
+.image
 {
     max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
