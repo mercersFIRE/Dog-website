@@ -3,10 +3,6 @@ body {
     font-family: "Tilt Neon", sans-serif;
 }
 
-#dogimage {
-    margin: 0 auto;
-}
-
 .section1 {
     padding: 4rem 4rem;
     background-color: #b2dfdb;
@@ -18,19 +14,38 @@ body {
     margin: 0 auto;
 }
 
-.insection1 h1 {    
+.insection1 h1 {
     font-size: 3rem;
     font-weight: normal;
     margin: 0;
 }
 
-.dropdown {
-    margin:20px auto;
+#dropdown {
+    margin: 20px auto;
     text-align: center;
 }
-.image
-{
+
+#dogimage {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.image {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+}
+
+@keyframes fadeInOutAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
