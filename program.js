@@ -36,7 +36,7 @@ async function choose(x) {
             // Remove animation class after animation completes
             setTimeout(() => {
                 dogImage.classList.remove("animate__fadeIn");
-            }, 1000); // Animation duration (1 second)
+            }, 3000); // Animation duration (1 second)
 
             index++;
             setTimeout(changeImageWithAnimation, 5000); // Delay of 5000ms (5 seconds)
